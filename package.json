@@ -1,0 +1,19 @@
+{
+  "name": "music-upload",
+  "version": "1.0.0",
+  "description": "Upload your itunes library to the cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/villanuevawill/music-upload.git"
+  },
+  "author": "Will Villanueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/villanuevawill/music-upload/issues"
+  },
+  "homepage": "https://github.com/villanuevawill/music-upload"
+}
