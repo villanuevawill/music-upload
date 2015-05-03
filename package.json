@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/villanuevawill/music-upload/issues"
   },
-  "homepage": "https://github.com/villanuevawill/music-upload"
+  "homepage": "https://github.com/villanuevawill/music-upload",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }
