@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/villanuevawill/music-upload",
   "dependencies": {
-    "express": "^4.12.3",
-    "gulp-nodemon": "^2.0.3"
+    "express": "^4.12.3"
   },
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-nodemon": "^2.0.3"
   }
 }
