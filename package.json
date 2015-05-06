@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/villanuevawill/music-upload",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "gulp-concat": "^2.5.2"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
