@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
-    nodemon   = require('gulp-nodemon');
+    nodemon = require('gulp-nodemon'),
+    concat = require('gulp-concat');
+
 
 // start our node server using nodemon
 gulp.task('serve', function() {
@@ -9,4 +11,10 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.task('default', ['serve'])
+gulp.task('scripts', function() {
+  return gulp.src('./client/public/**/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./client/dist/'));
+});
+
+gulp.task('default', ['scripts', 'serve'])
