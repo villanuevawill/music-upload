@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 <body>
-	<p>
-		testing testing testing
-	</p>
+	<div id="droptarget" style="height:500px;"><p>yolo</p></div>
+	<script>
+  droptarget = document.getElementById('droptarget');
+  droptarget.ondragover = function(e) {
+  	e.preventDefault();
+  	return false;
+  }
+  droptarget.ondrop = function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    debugger;
+    var items = e.dataTransfer.items;
+    for (var i = 0; i < items.length; ++i) { 
+      if (items[i].kind != "file") {	
+         continue;
+      }
+
+      var entry = items[i].webkitGetAsEntry();    // WebKit/chromium needs 'webkit' prefix (since Chrome 21)
+  
+     // import the dropped files/folders into temporary filesystem
+    	entry.copyTo(temporaryFs.root, entry.name, successCallback, errorCallback);
+    }
+  };
+	</script>
 </body>
 </html>
