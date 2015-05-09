@@ -7,7 +7,9 @@ Browerify
 Browser Stack
 React
 Node
+Express
 Gulp
 Bootstrap
 SASS
 AWS
+Mongo
