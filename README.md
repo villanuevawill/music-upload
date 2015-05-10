@@ -3,8 +3,8 @@ Upload your music library to the cloud
 
 #THIS IS A WORK IN PROGRESS
 STACK:
-Browerify
 Browser Stack
+Browser-Sync
 React
 Node
 Express
